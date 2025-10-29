@@ -7,12 +7,12 @@ def add_task():
     Tasks.append(task)
 
 def delete_task():
-    taskDel = input("Alege numar corespunzator taskului pe care vrei sa-l stergi.\n")
+    taskDel = int(input("Alege numar corespunzator taskului pe care vrei sa-l stergi.\n"))-1
     Tasks.pop(taskDel)
 
 def afisare_taskuri():
     for t in Tasks:
-                print(f"{Tasks.index(t)}. {t}\n")
+                print(f"{Tasks.index(t)+1}. {t}\n")
 
 Variante = {"adaugare", "stergere", "afisare", "inchidere"}
 
